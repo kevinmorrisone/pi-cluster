@@ -66,8 +66,8 @@ metadata:
   name: cloudflared
 data:
   config.yaml: |
-    # Name of the tunnel you want to run
-    
+# Name of the tunnel you want to run
+
     tunnel: ldpi
 
     credentials-file: /etc/cloudflared/creds/credentials.json
