@@ -19,7 +19,6 @@ spec:
         runAsUser: 1000
         runAsGroup: 1000
 
-    spec:
       containers:
         - name: audiobookshelf
           image: ghcr.io/advplyr/audiobookshelf:2.17.2
