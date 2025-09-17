@@ -21,14 +21,10 @@ data:
             - abbr: GH
               href: https://github.com/
   services.yaml: |
-    - widget:
-        type: prometheus
-        url: http://prometheushost:grs.kevinmorrisone.com
-
     - My First Group:
-        - My First Service:
-            href: http://localhost/
-            description: Homepage is awesome
+        - widget:
+            type: prometheus
+            url: http://prometheushost:grs.kevinmorrisone.com
 
     - My Second Group:
         - My Second Service:
