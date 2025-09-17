@@ -31,12 +31,12 @@ data:
     - My Second Group:
         - My Second Service:
             href: http://localhost/
-            description: Homepage is the best
+            description: FUCK!
 
     - My Third Group:
         - My Third Service:
         href: http://localhost/:widget
-            description: Homepage is 😎
+            description: DAMN IT!
 
   widgets.yaml: |
     - kubernetes:
