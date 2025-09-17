@@ -24,7 +24,7 @@ data:
     - My First Group:
         - widget:
             type: prometheus
-            url: http://prometheushost:grs.kevinmorrisone.com
+            url: http://grs.kevinmorrisone.com
 
     - My Second Group:
         - My Second Service:
