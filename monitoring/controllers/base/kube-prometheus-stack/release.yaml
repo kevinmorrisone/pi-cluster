@@ -53,6 +53,6 @@ spec:
           tls:
             - secretName: grafana-tls-secret
               hosts:
-                - grs.kevinmorrisone.com
+                - grs.kevin-morris.net
 
 
