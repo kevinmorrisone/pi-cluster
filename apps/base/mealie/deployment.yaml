@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: audiobookshelf
+  name: mealie
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: audiobookshelf
+      app: mealie
 
   template:
     metadata:
       labels:
-        app: audiobookshelf
+        app: mealie
 
     spec:
       securityContext:
@@ -21,33 +21,23 @@ spec:
 
       containers:
         - name: audiobookshelf
-          image: ghcr.io/advplyr/audiobookshelf:2.17.2
+          image:  ghcr.io/mealie-recipes/mealie:v3.1.2
 
           envFrom:
             - configMapRef:
-                name: audiobookshelf-configmap
+                name: mealie-configmap
 
           ports:
-            - containerPort: 3005
+            - containerPort: 9000
               protocol: TCP
 
           volumeMounts:
-            - mountPath: /config
-              name: audiobookshelf-config
-            - mountPath: /metadata
-              name: audiobookshelf-metadata
-            - mountPath: /audiobooks
-              name: audiobookshelf-audiobooks
+            - mountPath: /app/metadata
+          name: mealie-data
 
       restartPolicy: Always
 
       volumes:
-        - name: audiobookshelf-config
+        - name: mealie-data
           persistentVolumeClaim:
-            claimName: audiobookshelf-config
-        - name: audiobookshelf-metadata
-          persistentVolumeClaim:
-            claimName: audiobookshelf-metadata
-        - name: audiobookshelf-audiobooks
-          persistentVolumeClaim:
-            claimName: audiobookshelf-audiobooks
+            claimName: mealie-data
