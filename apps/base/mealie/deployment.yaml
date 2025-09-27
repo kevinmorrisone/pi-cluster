@@ -31,13 +31,13 @@ spec:
             - containerPort: 9000
               protocol: TCP
 
-#          volumeMounts:
-#            - mountPath: /app/metadata
-#          name: mealie-data
+          volumeMounts:
+            - mountPath: /app/metadata
+          name: mealie-data
 
       restartPolicy: Always
 
-#      volumes:
-#        - name: mealie-data
-#          persistentVolumeClaim:
-#            claimName: mealie-data
+      volumes:
+        - name: mealie-data
+          persistentVolumeClaim:
+            claimName: mealie-data
