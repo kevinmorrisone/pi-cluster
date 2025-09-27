@@ -32,7 +32,7 @@ spec:
               protocol: TCP
 
           volumeMounts:
-            - mountPath: /app/metadata
+            - mountPath: /app/data
           name: mealie-data
 
       restartPolicy: Always
