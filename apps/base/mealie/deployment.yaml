@@ -20,7 +20,7 @@ spec:
         runAsGroup: 1000
 
       containers:
-        - name: audiobookshelf
+        - name: mealie
           image:  ghcr.io/mealie-recipes/mealie:v3.1.2
 
           envFrom:
