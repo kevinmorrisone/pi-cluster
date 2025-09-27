@@ -13,7 +13,7 @@ spec:
       labels:
         app: mealie
 
-        #   spec::working_dir: dir
+    spec:
  #     securityContext:
  #       fsGroup: 1000
  #       runAsUser: 1000
