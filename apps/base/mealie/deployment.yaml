@@ -13,11 +13,11 @@ spec:
       labels:
         app: mealie
 
-    spec:
-      securityContext:
-        fsGroup: 1000
-        runAsUser: 1000
-        runAsGroup: 1000
+        #   spec::working_dir: dir
+ #     securityContext:
+ #       fsGroup: 1000
+ #       runAsUser: 1000
+ #       runAsGroup: 1000
 
       containers:
         - name: mealie
@@ -31,13 +31,13 @@ spec:
             - containerPort: 9000
               protocol: TCP
 
-          volumeMounts:
-            - mountPath: /app/metadata
-          name: mealie-data
+#          volumeMounts:
+#            - mountPath: /app/metadata
+#          name: mealie-data
 
       restartPolicy: Always
 
-      volumes:
-        - name: mealie-data
-          persistentVolumeClaim:
-            claimName: mealie-data
+#      volumes:
+#        - name: mealie-data
+#          persistentVolumeClaim:
+#            claimName: mealie-data
