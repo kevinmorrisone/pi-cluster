@@ -33,7 +33,7 @@ spec:
 
           volumeMounts:
             - mountPath: /app/data
-          name: mealie-data
+              name: mealie-data
 
       restartPolicy: Always
 
