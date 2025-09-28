@@ -45,7 +45,7 @@ spec:
           ## Must be provided if Ingress is enable.
           ##
           hosts:
-            - grs.kevin-morris.net
+            - grafana.kevin-morris.net
 
           ## TLS configuration for grafana Ingress
           ## Secret must be manually created in the namespace
@@ -53,6 +53,6 @@ spec:
           tls:
             - secretName: grafana-tls-secret
               hosts:
-                - grs.kevin-morris.net
+                - grafana.kevin-morris.net
 
 
