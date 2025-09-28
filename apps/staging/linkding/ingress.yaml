@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: lds.kevin-morris.net
+    - host: linkding.kevin-morris.net
       http:
         paths:
           - backend:
