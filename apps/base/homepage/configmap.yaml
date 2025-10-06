@@ -28,6 +28,9 @@ data:
         - Grafana:
             href: http://grafana.kevin-morris.net
             icon: grafana.png
+        - Grafana:
+            href: http://linkding.kevin-morris.net
+            icon: linkding.png
 
     - My Second Group:
         - My Second Service:
