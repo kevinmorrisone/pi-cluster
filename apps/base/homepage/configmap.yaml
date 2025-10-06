@@ -28,7 +28,7 @@ data:
         - Grafana:
             href: http://grafana.kevin-morris.net
             icon: grafana.png
-        - Grafana:
+        - Linkding:
             href: http://linkding.kevin-morris.net
             icon: linkding.png
 
